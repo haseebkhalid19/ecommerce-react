@@ -1,7 +1,11 @@
 import "./Header.css";
 import { Logo, appImg } from "../../img";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass,faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMagnifyingGlass,
+  faShoppingCart,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
@@ -10,41 +14,41 @@ const Header = () => {
         <div id="topNav">
           <ul>
             <li>
-              <a href="#" class="active">
+              <a href="javascript:void(0)" className="active">
                 {" "}
                 SAVE MORE ON APP{" "}
               </a>
             </li>
             <li>
-              <a href="#"> DARAZ AFFILIATE PROGRAM </a>
+              <a href="javascript:void(0)"> DARAZ AFFILIATE PROGRAM </a>
             </li>
             <li>
-              <a href="#"> SELL ON DARAZ </a>
+              <a href="javascript:void(0)"> SELL ON DARAZ </a>
             </li>
             <li>
-              <a href="#"> CUSTOMER CARE </a>
+              <a href="javascript:void(0)"> CUSTOMER CARE </a>
             </li>
             <li>
-              <a href="#"> TRACK MY ORDER </a>
+              <a href="javascript:void(0)"> TRACK MY ORDER </a>
             </li>
             <li>
-              <a href="#"> LOGIN </a>
+              <a href="javascript:void(0)"> LOGIN </a>
             </li>
             <li>
-              <a href="#"> SIGNUP </a>
+              <a href="javascript:void(0)"> SIGNUP </a>
             </li>
             <li>
-              <a href="#"> زبان تبدیل کریں </a>
+              <a href="javascript:void(0)"> زبان تبدیل کریں </a>
             </li>
           </ul>
         </div>
 
-        <div class="searchHeader">
+        <div className="searchHeader">
           <ul>
             <li>
-              <a href="#">
+              <NavLink to={`/`}>
                 <img src={Logo} alt="Site Logo" width={100} />
-              </a>
+              </NavLink>
             </li>
             <li>
               <input
@@ -59,7 +63,7 @@ const Header = () => {
               <FontAwesomeIcon icon={faShoppingCart} />
             </li>
             <li>
-              <a href="#">
+              <a href="javascript:void(0)">
                 <img src={appImg} alt="app image" width={200} />
               </a>
             </li>

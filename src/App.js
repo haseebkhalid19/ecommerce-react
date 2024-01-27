@@ -1,4 +1,4 @@
-import {Home} from "./Components/Pages";
+import { Outlet } from "react-router-dom";
 import { Header, Footer } from "./Components";
 import "./App.css";
 
@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Header />
-      <Home />
+      <Outlet />
       <Footer />
     </>
   );
